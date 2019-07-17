@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+</head>
+<body>
+    <div class="products">
+
+        <div class="product">
+            <div class="product-content">
+                <div class="new"><img class="new-image" src="images/new.png"></div>
+                <img src="images/product.jpeg">
+                <div class="footer-content">
+                    <h3>Phần mềm kế toán</h3>
+                    <div class="price" ><label>Giá 120 000 vnđ</label></div>
+                </div>
+                <div class="buy"><button class="buy-now" type="button">Mua ngay</button></div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-content">
+                <div class="new"><img class="new-image" src="images/new.png"></div>
+
+                <img src="images/product.jpeg">
+                <div class="footer-content">
+                    <h3>Phần mềm kế toán</h3>
+                    <div class="price" ><label>Giá 120 000 vnđ</label></div>
+                </div>
+                <div class="buy"><button class="buy-now" type="button">Mua ngay</button></div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-content">
+                <div class="new"><img class="new-image" src="images/new.png"></div>
+
+                <img src="images/product.jpeg">
+                <div class="footer-content">
+                    <h3>Phần mềm kế toán</h3>
+                    <div class="price" ><label>Giá 120 000 vnđ</label></div>
+                </div>
+                <div class="buy"><button class="buy-now" type="button">Mua ngay</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+    <style type="text/css">
+        .products{
+
+            width: 1200px;
+            margin: 150px auto;
+        }
+        .product{
+            position: relative;
+            width: 33%;
+            float: left;
+        }
+        .product-content
+        {
+            margin: 0 auto;
+            width: 280px;
+            position: relative;
+        }
+        .new{
+            position: absolute;
+            top: -20px;
+            right: -20px;
+        }
+        .new-image
+        {
+            width: 50px;
+        }
+
+    </style>
+</html>
