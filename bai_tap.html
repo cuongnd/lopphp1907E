@@ -5,6 +5,44 @@
     <title>Title</title>
 </head>
 <body>
-
+    <table class="table-login">
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td>Mã người dùng</td>
+            <td><input type="text" class="name" id="name"></td>
+        </tr>
+        <tr>
+            <td>Mật khẩu</td>
+            <td><input type="password" class="password" id="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><button class="submit" type="button" onclick="show_name()">Đăng ký</button></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="show-name"></td>
+        </tr>
+    </table>
 </body>
+<script type="text/javascript">
+    function show_name() {
+        var name=document.getElementById('name').value;
+        document.getElementById('show-name').innerHTML=name;
+    }
+</script>
+<style type="text/css">
+    .name,.password{
+        padding: 10px;
+        width: 250px;
+    }
+    .submit{
+        padding: 10px;
+    }
+    .table-login
+    {
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+</style>
 </html>
