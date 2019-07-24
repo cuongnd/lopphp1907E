@@ -1,0 +1,88 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 0;
+    padding: 0;
+}
+.header-1,.header-2{
+    width: 1600px;
+    margin: 0 auto;
+}
+.header-1,.header-2
+{
+    display: table;
+}
+.header-1 .wrapper-content
+{
+    float: right;
+}
+.header-1 .wrapper-content .menu .item
+{
+    display: inline;
+
+}
+.header-1 .wrapper-content .menu ,.header-1 .wrapper-content .phone,.header-1 .wrapper-content .search, header-1 .wrapper-content .cart
+{
+    float: left;
+    margin-right: 10px;
+}
+.header-2
+{
+    margin-top: 20px;
+}
+.header-2 .wrapper-content-left{
+    float: left;
+}
+.header-2 .wrapper-content-right{
+    float: right;
+}
+.header-2 .wrapper-content-right .menu .item
+{
+    display: inline;
+}
+.header-2 .wrapper-content-right .menu > .item > a{
+    text-transform: uppercase;
+    padding: 20px;
+    margin-right: 1px;
+    color: #08c;
+    font-weight: bold;
+    line-height: 40px ;
+    text-decoration: none;
+}
+.header-2 .wrapper-content-right .menu > .item >a:hover,.header-2 .wrapper-content-right .menu > .item.active > a
+{
+    color: #fff;
+    background: #08c;
+    border-radius: 3px;
+
+
+}
+.header-2  .wrapper-content-right .menu,.header-2  .wrapper-content-right .social
+{
+    float: left;
+    margin-right: 10px;
+}
+.header-2  .wrapper-content-right .social
+{
+    font-size: 30px;
+    line-height: 40px;
+}
+.header-2  .wrapper-content-right .social > i{
+    margin-right: 5px;
+    border-radius: 38px;
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 30px;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+
+}
+.header-2  .wrapper-content-right .social > i:hover{
+    background: #08c;
+    color: #fff;
+    cursor: pointer;
+}
