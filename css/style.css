@@ -1,3 +1,8 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
 ul{
     margin: 0;
     padding: 0;
@@ -6,11 +11,11 @@ li{
     margin: 0;
     padding: 0;
 }
-.header-1,.header-2{
-    width: 1600px;
+.header-1,.header-2,.wrapper-content{
+    width: 1200px;
     margin: 0 auto;
 }
-.header-1,.header-2
+.header-1,.header-2,.slide-item,.fastest,.fastest .wrapper-content
 {
     display: table;
 }
@@ -85,4 +90,42 @@ li{
     background: #08c;
     color: #fff;
     cursor: pointer;
+}
+.slide-show .owl-carousel .slide-item{
+    height: 600px;
+    width: 100%;
+    text-align: center;
+}
+.slide-show .owl-carousel .slide-item-1
+{
+    background: url("../images/slide-show/1.jpg");
+}
+.slide-show .owl-carousel .slide-item-2
+{
+    background: url("../images/slide-show/2.jpg");
+}
+.fastest{
+    background-color: #08c;
+    width: 100%;
+}
+.fastest .wrapper-content .wrapper-content-left {
+    float: left;
+    color: #fff;
+    padding: 30px 0;
+}
+.fastest .wrapper-content .wrapper-content-right
+{
+    float: right;
+    color: #fff;
+    padding: 40px 0;
+}
+.fastest .wrapper-content .wrapper-content-right .get-now
+{
+    background: #000;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 7px;
+    border: 1px solid #000;
 }

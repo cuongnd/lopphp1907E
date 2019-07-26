@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link href="css/style.css" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+    <link href="OwlCarousel2-2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="fonts/fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet">
     <title>Title</title>
 </head>
@@ -38,5 +44,38 @@
             </div>
         </div>
     </header>
+    <section class="slide-show">
+        <div class="owl-carousel owl-theme">
+            <div class="slide-item slide-item-1">
+                <h2>Do you need a new</h2>
+                <h1>Web design ?</h1>
+                <p>Check out our options and features.</p>
+            </div>
+            <div class="slide-item slide-item-2">
+                <h2>Do you need a new</h2>
+                <h1>Web design ?</h1>
+                <p>Check out our options and features.</p>
+            </div>
+        </div>
+    </section>
+    <section class="fastest">
+        <div class="wrapper-content">
+            <div class="wrapper-content-left">
+                <h3>The fastest way to grow your business with the leader in <span class="technology">Technology</span></h3>
+                <p>Check out our options and features included.</p>
+            </div>
+            <div class="wrapper-content-right">
+                <button class="btn get-now">Get stander now</button> <span>or <b><a href="#">learn more</a></b></span>
+            </div>
+
+        </div>
+    </section>
 </body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            items:1
+        });
+    });
+</script>
 </html>
