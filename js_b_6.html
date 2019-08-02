@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        scope="global";
+        function check_scope() {
+            scope="local";
+            console.log("------scope-------",scope);
+            document.write(scope);
+            mycope="local";
+            console.log("------mycope-------",mycope);
+            document.write(mycope);
+        }
+        check_scope();
+        console.log("-------scope----doan nay goi o ngoai------",scope);
+        document.write(scope);
+    </script>
+</body>
+</html>
