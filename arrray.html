@@ -31,6 +31,128 @@
     var list_name_8=["hung","nam"];
     var full_list_name_2=list_name_6.concat(list_name_7,list_name_8);
     console.log("full_list_name_2",full_list_name_2);
+    /*
+    cach su dung every
+     */
+    var check_nho_hon_0=false;
+    var list_number=[1,2,4,5,-1];
+    for(var i=0;i<list_number.length;i++){
+        var currentItem=list_number[i];
+        if(currentItem<0){
+            check_nho_hon_0=true;
+        }
+    }
+
+    //=============
+    //note lai
+    var list_number2=[10,2,4,5,-1];
+    var fuc_kiemtra= function (value, index, a_array) {
+        console.log("value",value);
+      return value<0;
+    };
+    if(list_number2.every(fuc_kiemtra)){
+        console.log("no co chay vao day");
+    }
+    //=================
+    document.write("ham join")
+    list_name=["quang","trung","hoang","duong"];
+    //mong muon => quang,trung,hoang,duong
+    var str_names=list_name.join();
+    document.write(str_names);
+    document.write("<hr/>");
+    //mong muon khac =>quang|trung|hoang|duong
+    str_names=list_name.join("|");
+    document.write(str_names);
+    //==============
+    /*
+    phuong thuc indexof
+     */
+    document.write("<hr/>");
+    document.write("phuong thuc indexof");
+    list_name=["quang","trung","hoang","duong"];
+    var vi_tri=list_name.indexOf("hoang");
+    /*
+    -1=>khong co gia tri do
+    !=-1=> co ton tai trong mang
+     */
+    document.write("vi_tri cua hoang - "+vi_tri);
+
+    //=============
+    document.write("<hr/>");
+    document.write("phuong thuc map");
+    list_number=[2,4,4,2,3];
+    var nhan_doi=function (value, index, a_array) {
+        return value*2;
+    };
+    var new_list_number=list_number.map(nhan_doi);
+    document.write("new_list_number:"+new_list_number);
+    //=============
+    document.write("<hr/>");
+    document.write("phuong thuc splice");
+    document.write("<br/>");
+    var my_var=[13,36,25,52,83,23,200];
+    document.write("old my_var:"+my_var);
+    document.write("<br/>");
+
+    my_var.splice(2,3,42,15,100);
+    document.write("2,3,42,15");
+    document.write("<br/>");
+    document.write("my_var:"+my_var);
+
+    //=============
+
+    document.write("<hr/>");
+    document.write("phuong thuc sort dung de sap xep mang");
+    document.write("<br/>");
+    var my_list_name=["hoang","nam","duong","tuan"];
+    document.write("my_list_name:"+my_list_name);
+    document.write("<br/>");
+    document.write("sau khi sap xep thi duoc mang moi");
+    document.write("<br/>");
+
+    document.write("new_my_number_sort:"+my_list_name.sort()+"\n");
+    /*
+    sort mang so
+     */
+    document.write("<br/>");
+    //sap xep tang dan
+    var my_number=[2,4,61,5,7,67];
+    document.write("old my_number:"+my_number);
+    document.write("<br/>");
+    my_number.sort(function (a, b) {
+        return a-b;
+    });
+    document.write("my_number:"+my_number);
+    document.write("<br/>");
+    //sap xep gian dam
+    var my_number=[2,4,61,5,7,67];
+    document.write("old my_number:"+my_number);
+    document.write("<br/>");
+    my_number.sort(function (a, b) {
+        return b-a;
+    });
+    document.write("my_number:"+my_number);
+
+    //dao nguoc mang
+    document.write("<br/>");
+    list_number=[1,2,3,4,5,6,7];
+    document.write("old list_number:"+list_number);
+    document.write("<br/>");
+    list_number.reverse();
+    document.write("sau khi dao nguoc list_number:"+list_number);
+
+    /*
+    xao tron phan tu trong mang
+     */
+    document.write("<br/>");
+    document.write("old list_number:"+list_number);
+    document.write("<br/>");
+
+    var my_xao_tron=[1,2,3,4,5,6,7,8];
+    my_xao_tron.sort(function () {
+        return 0.5-Math.random();
+    });
+    document.write("mang sau khi sao tron :"+my_xao_tron);
 
 
 </script>
