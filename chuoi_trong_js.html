@@ -30,7 +30,32 @@
     document.write("<br/>");
     document.write("vi tri so 2 la ky tu : "+str_full_name.charCodeAt(2));
     document.write("<br/>");
-
+    var full_name="nguyen van a, lop php";
+    /*
+    chỉ bỏ chuỗi ", lop php"
+     */
+    document.write("khi chua thay the"+full_name);
+    document.write("<br/>");
+    full_name=full_name.replace(", lop php","");
+    document.write("=>ten"+full_name);
+    var city="thanh pho ha noi";
+    document.write("<br/>");
+    document.write("city"+city);
+    document.write("<br/>");
+    city=city.slice(10,12);
+    document.write("=>city"+city);
+    document.write("<br/>");
+    var full_city="thanh pho ho chi minh";
+    document.write("full_city"+full_city);
+    document.write("<br/>");
+    full_city=full_city.substr(10,3);
+    document.write("=>full_city:"+full_city);
+    document.write("<br/>");
+    var dia_chi="THANH PHO HA NOI";
+    document.write("dia chi:"+dia_chi);
+    document.write("<br/>");
+    dia_chi=dia_chi.toLocaleLowerCase();
+    document.write('=>dia_chi:'+dia_chi);
 
 </script>
 </body>
