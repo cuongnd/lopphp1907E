@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://momentjs.com/downloads/moment.js" type="text/javascript"></script>
 </head>
 <body>
 <script type="text/javascript">
@@ -13,8 +14,11 @@
     document.write("date2:"+date2);
     document.write("<br/>");
     var date_now=new Date();
-    document.write("ngay hom nay:"+date_now.getDate());
+    document.write("ngay hom nay:"+date_now.getDay());
     document.write("<br/>");
+    document.write("thang:"+date_now.getMonth());
+    document.write("<br/>");
+    document.write("nam nay:",date_now.getYear());
 
 </script>
 </body>
