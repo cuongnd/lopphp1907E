@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function my_class() {
+            this.myData=5;
+            this.myString="Hello php";
+            this.hien_thi_thong_tin=function () {
+                console.log("hello hien_thi_thong_tin");
+            }
+        }
+        var myClassObject1=new my_class();
+        myClassObject1.myData=10;
+        console.log("myClassObject1,myClassObject1",myClassObject1.myData);
+        var myClassObject2=new my_class();
+        console.log("myClassObject1,myClassObject2",myClassObject2.myData);
+        myClassObject2.hien_thi_thong_tin();
+
+    </script>
+</body>
+</html>
