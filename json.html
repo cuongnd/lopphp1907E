@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var sinh_vien={
+            "ho_ten":"nguyen van a",
+            "ngay_sinh":"12-06-2015",
+            "dia_chi":"ha noi",
+            "lop":"php1907e"
+
+        };
+        console.log(sinh_vien);
+        //lấy thuộc tính
+        console.log("Họ và tên:",sinh_vien.ho_ten);
+        console.log("Ngày sinh:",sinh_vien.ngay_sinh);
+        var list_sinh_vien=[
+            {
+                "ho_ten":"nguyen van b",
+                "ngay_sinh":"20-05-2013",
+                "dia_chi":"ha noi"
+            },
+            {
+                "ho_ten":"nguyen van c",
+                "ngay_sinh":"23-02-1986",
+                "dia_chi":"thanh hoa"
+            },
+            {
+                "ho_ten":"nguyen van d",
+                "ngay_sinh":"21-09-2016",
+                "dia_chi":"quảng bình"
+            }
+        ];
+        console.log("list sinh vien:",list_sinh);
+        document.write("list sinh vien"+list_sinh);
+
+    </script>
+    <table border="1" style="margin: 20px auto">
+        <thead>
+            <tr>
+                <td>Họ và tên</td>
+                <td>Ngày sinh</td>
+                <td>Địa chỉ</td>
+            </tr>
+        </thead>
+        <tbody id="content-sinh-vien">
+
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        var tbody=document.getElementById('content-sinh-vien');
+        var html_sinh_vien=[];
+        for(var i=0;i<list_sinh_vien.length;i++){
+            var sinh_vien=list_sinh_vien[i];
+            var str_tr=`<tr>
+        <td>${sinh_vien.ho_ten}</td>
+        <td>${sinh_vien.ngay_sinh}</td>
+        <td>${sinh_vien.dia_chi}</td>
+</tr>`;
+            html_sinh_vien.push(str_tr);
+        }
+        tbody.innerHTML=html_sinh_vien.join("");
+        console.log("html_sinh_vien",html_sinh_vien);
+    </script>
+</body>
+</html>
