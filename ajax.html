@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/news.css" rel="stylesheet">
+    <title>Ajax</title>
+</head>
+<body>
+    <div class="list-news" id="list-news">
+
+    </div>
+    <script type="text/javascript">
+        var root_url="https://t3h.vantinviet.com";
+        var url=`${root_url}/index.php?option=com_content&task=article.getAjaxContent`;
+        var xhttp = new XMLHttpRequest();
+        var list_news=document.getElementById('list-news');
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var responseText=this.responseText;
+                var jsonResponse=JSON.parse(responseText);
+
+                console.log("responseText",responseText);
+                console.log("jsonResponse",jsonResponse);
+                var html_new=[];
+                for(var i=0;i<jsonResponse.length;i++){
+                    var item_new=jsonResponse[i];
+                    var images=item_new.images;
+                    images=JSON.parse(images);
+                    var new_item=`
+                      <div class="new-item">
+                        <h3 class="title-content"><a class="title-link" href="javascript:void(0)">${item_new.title} </a></h3>
+                        <div class="new-content">
+                            <div class="image-content">
+                                <img class="image" src="${root_url}/${images.image_intro}">
+                            </div>
+                            <div class="new-intro-text">
+                                ${item_new.introtext}
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                    html_new.push(new_item);
+                }
+                list_news.innerHTML=html_new.join(" ");
+                console.log("html_new",html_new);
+
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    </script>
+</body>
+</html>

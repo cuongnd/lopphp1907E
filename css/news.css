@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.list-news
+{
+    width: 70%;
+}
+.list-news .new-item{
+    display: table;
+}
+.list-news .new-item .title-content .title-link{
+    color: #5d5d5d;
+    font-size: 15px;
+
+}
+.list-news .new-item .title-content{
+    margin: 5px 0;
+    padding: 0;
+
+}
+.list-news .new-item .image-content{
+    float: left;
+    width: 30%;
+
+}
+.list-news .new-item .image-content .image{
+    width: 100%;
+}
+.list-news .new-item .new-content .new-intro-text{
+    float: left;
+    width: 70%;
+    text-align: justify;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
