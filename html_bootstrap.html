@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" ></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assests/css/my_style.css" >
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    <title>Title</title>
+</head>
+<body>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Đăng ký
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <form style="margin: 0 auto; width: 90%" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Check me out
+                        </label>
+                    </div>
+                    <button type="button" id="myButton" data-loading-text="dang kiem tra..." class="btn btn-primary" autocomplete="off">
+                        dang ky
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myDropdown"  class="dropdown">
+    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown trigger
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dLabel">
+        <li>hello1</li>
+        <li>hello2</li>
+        <li>hello3</li>
+        <li>hello4</li>
+    </ul>
+</div>
+
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#trang_chu" aria-controls="home" role="tab" data-toggle="tab">Trang chủ</a></li>
+        <li role="presentation" class=""><a href="#gio_thieu" class="gioi_thieu" aria-controls="home" role="tab" data-toggle="tab">Gioi thiệu</a></li>
+        <li role="presentation" class=""><a href="#lien_he" class="lien_he" aria-controls="home" role="tab" data-toggle="tab">Liên hệ</a></li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="trang_chu">noi dung cua trang chu</div>
+        <div role="tabpanel" class="tab-pane" id="gio_thieu">noi dung cua gioi thieu</div>
+        <div role="tabpanel" class="tab-pane" id="lien_he">form lien he</div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="xin chao">di vao day</button>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+
+
+<button type="button" id="dang-ky-thanh-vien" data-placement="top" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="hello?">Click to toggle popover</button>
+
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                    hoc php co kho khong
+                </a>
+            </h4>
+        </div>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+            cung kho lam
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne2">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse"   data-parent="#accordion" href="#collapseOne1" aria-controls="collapseOne">
+                    hoc mat bao lau
+                </a>
+            </h4>
+        </div>
+    </div>
+    <div id="collapseOne1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+            tam vai thang
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne3">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse"  data-parent="#accordion" href="#collapseOne2"  aria-controls="collapseOne">
+                    hoc mat bao lau
+                </a>
+            </h4>
+        </div>
+    </div>
+    <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+            tam vai thang
+        </div>
+    </div>
+</div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="https://img2.thuthuatphanmem.vn/uploads/2018/12/30/anh-background-cuc-dep_110341116.jpg" alt="...">
+            <div class="carousel-caption">
+                anh 1
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://img2.thuthuatphanmem.vn/uploads/2018/12/30/anh-background-dep-nhat_110341130.jpg" alt="...">
+            <div class="carousel-caption">
+                anh 2
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://img2.thuthuatphanmem.vn/uploads/2018/12/30/anh-background-dep_110341149.jpg" alt="...">
+            <div class="carousel-caption">
+                anh 3
+            </div>
+        </div>
+        ...
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+    $=jQuery;
+
+    $('#myButton').on('click', function () {
+
+        var $btn = $(this).button('loading');
+        setTimeout(function () {
+            alert("du lieu chuan roi");
+            $btn.button('reset');
+        },3999);
+
+
+    })
+
+
+
+    $('#dang-ky-thanh-vien').popover();
+
+    $('#dang-ky-thanh-vien').on('show.bs.popover', function () {
+       alert('show');
+    })
+    $('#dang-ky-thanh-vien').on('shown.bs.popover', function () {
+       alert('shown');
+    })
+
+
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+
+
+
+</script>
+</body>
+</html>
