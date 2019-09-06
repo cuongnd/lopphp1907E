@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+            src="assests/js/jquery.js"
+            type="text/javascript"></script>
+    <link href="assests/css/my_style.css" rel="stylesheet">
+    <title>Demo jquery</title>
+</head>
+<body>
+
+
+    <div class="child">hello child</div>
+
+    <button class="action" type="button">Action</button>
+    <script type="text/javascript">
+        $=jQuery;
+
+        //
+        $('.action').click(function (e) {
+            $('.child').animate({
+                'font-size': '80px',
+                'color': 'green'
+            }, 1000, 'easeOutBounce');
+
+        });
+
+    </script>
+
+</body>
+</html>
