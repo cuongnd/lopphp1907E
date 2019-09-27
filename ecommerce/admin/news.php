@@ -9,8 +9,7 @@
 </head>
 <body>
 <?php
-    require_once "../connection.php";
-    require_once "app.php";
+    require_once "../init.php";
     if(!App::check_login()){
         header("location:admin/login.php");
     }
