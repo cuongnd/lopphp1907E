@@ -1,4 +1,9 @@
 <?php
+define("ADMIN_ROOT_PATH",__DIR__);
+define("ADMIN_ROOT_SITE","http://localhost/lopphp1907E/ecommerce/admin/");
+//Todo sẽ sủ lý sau
+
+
 class App
 {
     static function check_login(){

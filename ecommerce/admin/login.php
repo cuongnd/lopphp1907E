@@ -1,17 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="assests/js/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assests/css/admin.css">
+    <?php
+    require_once "../init.php";
+    require_once ADMIN_ROOT_PATH."/components/head.php";
+    ?>
     <title>Login</title>
 </head>
 <body>
 <?php
-require_once "../init.php";
+
 if(App::check_login()){
     header("Location: index.php");
 }

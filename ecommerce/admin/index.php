@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <?php
+    require_once "../init.php";
+    require_once ADMIN_ROOT_PATH."/components/head.php";
+    ?>
+    <title>Index</title>
 </head>
 <body>
 <?php
@@ -15,6 +15,12 @@ if(!App::check_login()){
 }
 
 ?>
-hello index backend
+<div class="container">
+    <?php include_once ADMIN_ROOT_PATH."/components/top_header.php" ?>
+    <div class="row">
+        <?php include_once ADMIN_ROOT_PATH."/components/negative.php" ?>
+        <div class="col-md-9">noi dung cua index</div>
+    </div>
+</div>
 </body>
 </html>
