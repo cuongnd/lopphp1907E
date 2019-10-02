@@ -38,7 +38,7 @@ $kq=mysqli_query($connection,$query);
                         <td><?php echo $row['title'] ?></td>
                         <td><?php echo $row['ordering'] ?></td>
                         <td><?php echo $row['published'] ?></td>
-                        <td><button class="btn btn-primary btn-danger">Delete</button><button class="btn btn-primary">Edit</button></td>
+                        <td><a class="btn btn-primary btn-danger">Delete</a><a href="<?php echo ADMIN_ROOT_SITE ?>/ecommerce/categories/editcategory.php?category_id=<?php echo $row['id'] ?>" class="btn btn-primary">Edit</a></td>
                     </tr>
                 <?php } ?>
                 </tbody>
