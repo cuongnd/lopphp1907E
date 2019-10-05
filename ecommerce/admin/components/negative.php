@@ -4,6 +4,7 @@
     <ul>
         <li><a href="<?php echo ADMIN_ROOT_SITE ?>index.php">Dashboard</a></li>
         <li><a href="<?php echo ADMIN_ROOT_SITE ?>ecommerce/categories/listcategory.php">Danh mục</a></li>
+        <li><a href="<?php echo ADMIN_ROOT_SITE ?>ecommerce/products/listproduct.php">Sản phẩm</a></li>
     </ul>
 
 </div>

@@ -56,8 +56,8 @@ $link_catgory='/ecommerce/categories/editcategory.php';
                         <th>Status</th>
                         <td>
                             <select name="published">
-                                <option value="1" <?php echo $category['published']==1?' selected ':'' ?>>Enable</option>
-                                <option value="0" <?php echo $category['published']==0?' selected ':'' ?>>Disable</option>
+                                <option value="1" <?php echo $category['published']==1?' selected ':'' ?>>published</option>
+                                <option value="0" <?php echo $category['published']==0?' selected ':'' ?>>unpublished</option>
                             </select>
                         </td>
                     </tr>
