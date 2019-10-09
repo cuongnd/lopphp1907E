@@ -20,6 +20,8 @@ if(isset($_POST['login'])){
     $query="SELECT * FROM users WHERE username='$username' AND password='$password1' AND block='0'";
     $kg=mysqli_query($connection,$query);
     $user=$kg->fetch_assoc();
+
+
     $json_user=json_encode($user);
     if(isset($user['id']) && $user['id']>0){
         $_SESSION['user']=$json_user;

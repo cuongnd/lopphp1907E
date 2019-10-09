@@ -38,8 +38,8 @@ $kq=mysqli_query($connection,$query);
                             <td><?php echo $row['published'] ?></td>
                             <td><?php echo $row['product_old'] ?></td>
                             <td>
-                                <button class="btn btn-primary btn-danger">Delete</button>
-                                <button class="btn btn-primary">Edit</button>
+                                <a href="<?php echo ADMIN_ROOT_SITE ?>/ecommerce/products/listproduct.php?action=delete&product_id=<?php echo $row['id'] ?>" class="btn btn-primary btn-danger">Delete</a>
+                                <a href="<?php echo ADMIN_ROOT_SITE ?>/ecommerce/products/editproduct.php?product_id=<?php echo $row['id'] ?>" class="btn btn-primary">Edit</a>
                             </td>
                         </tr>
                     <?php } ?>
