@@ -2,6 +2,7 @@
 $query="SELECT * FROM `products` WHERE promo=1";
 $kq=mysqli_query($connection,$query);
 ?>
+<h3>Promotion products</h3>
 <div class="row">
 <?php
 while ($row = mysqli_fetch_array($kq)) {

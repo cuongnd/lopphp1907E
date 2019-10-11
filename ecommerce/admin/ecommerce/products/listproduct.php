@@ -25,6 +25,8 @@ $kq=mysqli_query($connection,$query);
                             <th>Title</th>
                             <th>Short description</th>
                             <th>Status</th>
+                            <th>Price</th>
+                            <th>Sale price</th>
                             <th>Product old</th>
                             <th><a href="<?php echo ADMIN_ROOT_SITE ?>/ecommerce/products/addproduct.php" class="btn btn-primary">Add product</a></th>
                         </tr>
@@ -36,6 +38,8 @@ $kq=mysqli_query($connection,$query);
                             <td><?php echo $row['title'] ?></td>
                             <td><?php echo $row['short_description'] ?></td>
                             <td><?php echo $row['published'] ?></td>
+                            <td><?php echo $row['price'] ?></td>
+                            <td><?php echo $row['sale_price'] ?></td>
                             <td><?php echo $row['product_old'] ?></td>
                             <td>
                                 <a href="<?php echo ADMIN_ROOT_SITE ?>/ecommerce/products/listproduct.php?action=delete&product_id=<?php echo $row['id'] ?>" class="btn btn-primary btn-danger">Delete</a>

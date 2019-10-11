@@ -57,9 +57,27 @@ $link_product='/ecommerce/products/editproduct.php';
                         <td><input type="text" name="title" value="<?php echo $product['title'] ?>"></td>
                     </tr>
                     <tr>
+                    <th>Product price</th>
+                    <td><input type="text" name="price" value="<?php echo $product['price'] ?>"></td>
+                    </tr>
+                    <tr>
+                        <th>Sale price</th>
+                        <td><input type="text" name="sale_price" value="<?php echo $product['sale_price'] ?>"></td>
+                    </tr>
+                    <tr>
                         <th>Ordering</th>
                         <td><input type="text" name="ordering" value="<?php echo $product['ordering'] ?>"></td>
                     </tr>
+                    <tr>
+                        <th>Old product ?</th>
+                        <td>
+                            <select name="product_old">
+                                <option value="1" <?php echo $product['product_old']==1?' selected ':'' ?>>Yes</option>
+                                <option value="0" <?php echo $product['product_old']==0?' selected ':'' ?>>No</option>
+                            </select>
+                        </td>
+                    </tr>
+
                     <tr>
                         <th>Short description</th>
                         <td>
