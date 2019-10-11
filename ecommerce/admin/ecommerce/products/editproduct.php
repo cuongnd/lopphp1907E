@@ -19,12 +19,16 @@ if(isset($_POST['save']) || isset($_POST['save_close'])){
     $title=$_POST['title'];
     $ordering=$_POST['ordering'];
     $published=$_POST['published'];
+    $price=$_POST['price'];
+    $sale_price=$_POST['sale_price'];
     $short_description=$_POST['short_description'];
     $full_description=$_POST['full_description'];
     $query="UPDATE `products`
             SET `title` = '$title',
             `ordering` = '$ordering',
             `published` = '$published',
+            `price` = '$price',
+            `sale_price` = '$sale_price',
             `short_description` = '$short_description',
             `full_description` = '$full_description'
              WHERE `id` = $product_id;";
