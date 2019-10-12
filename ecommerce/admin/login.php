@@ -17,7 +17,7 @@ if(isset($_POST['login'])){
     $username=$_POST['username'];
     $password=$_POST['password'];
     $password1=md5($password);
-    $query="SELECT * FROM users WHERE username='$username' AND password='$password1' AND block='0'";
+    $query="SELECT * FROM users WHERE username='$username' AND password='$password1' AND block='0' AND type='admin'";
     $kg=mysqli_query($connection,$query);
     $user=$kg->fetch_assoc();
 
