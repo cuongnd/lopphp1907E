@@ -16,5 +16,15 @@ class App
         }
         return false;
     }
+    static function get_user(){
+        //viết code kiểm tra xem login
+        //tạm thời cứ để login đã
+        $user= $_SESSION['user'];
+        $user=json_decode($user);
+        if($user->id>0){
+            return $user;
+        }
+        return null;
+    }
 
 }

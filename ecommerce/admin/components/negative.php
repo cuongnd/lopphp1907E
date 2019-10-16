@@ -6,6 +6,7 @@
         <li><a href="<?php echo ADMIN_ROOT_SITE ?>ecommerce/categories/listcategory.php">Danh mục</a></li>
         <li><a href="<?php echo ADMIN_ROOT_SITE ?>ecommerce/products/listproduct.php">Sản phẩm</a></li>
         <li><a href="<?php echo ADMIN_ROOT_SITE ?>ecommerce/orders/listorder.php">Danh sách đơn hàng</a></li>
+        <li><a href="<?php echo ADMIN_ROOT_SITE ?>index2.php?controller=branch&task=listing">Thương hiệu</a></li>
     </ul>
 
 </div>
