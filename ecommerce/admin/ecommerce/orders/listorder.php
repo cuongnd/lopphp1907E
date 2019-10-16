@@ -43,14 +43,19 @@ $kq=mysqli_query($connection,$query);
                     <th>ID</th>
                     <th>Order number</th>
                     <th>Status</th>
-                    <th></th>
+                    <th>Total</th>
+                    <th>Created date</th>
+                    <th><a href="#" class="btn btn-primary">Add new order</a></th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php while ($row=mysqli_fetch_array($kq)){ ?>
                     <tr>
                         <td><?php echo $row['id'] ?></td>
-                        <td><?php echo $row['order_number'] ?></td>
+                        <td><a href="<?php echo ADMIN_ROOT_SITE ?>/ecommerce/orders/editorder.php?order_id=<?php echo $row['id'] ?>" class="btn btn-link"><?php echo $row['order_number'] ?></a>
+                            </td>
+                        <td><?php echo $row['status'] ?></td>
+                        <td><?php echo $row['status'] ?></td>
                         <td><?php echo $row['status'] ?></td>
                         <td>
                             <a href="<?php echo ADMIN_ROOT_SITE ?>/ecommerce/orders/listorder.php?action=delete&order_id=<?php echo $row['id'] ?>" class="btn btn-primary btn-danger">Delete</a>
