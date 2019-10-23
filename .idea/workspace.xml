@@ -3,6 +3,38 @@
   <component name="ChangeListManager">
     <list default="true" id="47a7a94b-b819-4e03-a052-ebcf10f233e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/.env" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +54,6 @@
         <option value="CSS File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>1</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -115,7 +142,7 @@
       <workItem from="1570792897452" duration="8376000" />
       <workItem from="1571225028349" duration="9743000" />
       <workItem from="1571397758137" duration="7978000" />
-      <workItem from="1571830010233" duration="239000" />
+      <workItem from="1571830010233" duration="1593000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563362085408</created>
@@ -369,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571403627723</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add folder th_laravel1">
+      <created>1571830356986</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1571830356986</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -406,6 +440,7 @@
     <MESSAGE value="object &amp; json" />
     <MESSAGE value="connect database study" />
     <MESSAGE value="update add product" />
-    <option name="LAST_COMMIT_MESSAGE" value="update add product" />
+    <MESSAGE value="add folder th_laravel1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add folder th_laravel1" />
   </component>
 </project>

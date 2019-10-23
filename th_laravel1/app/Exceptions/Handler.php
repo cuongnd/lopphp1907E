@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace php1907e_th_laravel_1\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

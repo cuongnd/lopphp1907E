@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace php1907e_th_laravel_1\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'App\Http\Controllers';
+    protected $namespace = 'php1907e_th_laravel_1\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

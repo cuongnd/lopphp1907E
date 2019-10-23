@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => php1907e_th_laravel_1\User::class,
         ],
 
         // 'users' => [

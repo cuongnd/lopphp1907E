@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace php1907e_th_laravel_1\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 

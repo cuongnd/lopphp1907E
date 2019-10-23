@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace php1907e_th_laravel_1\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

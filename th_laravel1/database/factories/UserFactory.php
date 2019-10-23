@@ -1,7 +1,7 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-use App\User;
+use php1907e_th_laravel_1\User;
 use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 
