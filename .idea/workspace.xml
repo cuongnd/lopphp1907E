@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47a7a94b-b819-4e03-a052-ebcf10f233e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/admin/controllers/controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/admin/models/model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/admin/models/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/admin/views/branch/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/admin/views/branch/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/admin/views/user/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/admin/views/user/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/admin/views/user/listing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/admin/components/negative.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/admin/components/negative.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/admin/controllers/branch.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/admin/controllers/branch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/admin/controllers/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/admin/controllers/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/admin/index2.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/admin/index2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/admin/models/branch.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/admin/models/branch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/admin/views/branch/listing.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/admin/views/branch/listing.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +114,8 @@
       <workItem from="1570620172025" duration="6687000" />
       <workItem from="1570792897452" duration="8376000" />
       <workItem from="1571225028349" duration="9743000" />
-      <workItem from="1571397758137" duration="5812000" />
+      <workItem from="1571397758137" duration="7978000" />
+      <workItem from="1571830010233" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563362085408</created>
@@ -375,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571235106041</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="update add product">
+      <created>1571403627723</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1571403627723</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
