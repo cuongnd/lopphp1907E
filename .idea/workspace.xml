@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47a7a94b-b819-4e03-a052-ebcf10f233e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +111,7 @@
       <workItem from="1570792897452" duration="8376000" />
       <workItem from="1571225028349" duration="9743000" />
       <workItem from="1571397758137" duration="7978000" />
-      <workItem from="1571830010233" duration="2828000" />
+      <workItem from="1571830010233" duration="3512000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563362085408</created>
@@ -380,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571832214351</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="update database">
+      <created>1571833537503</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1571833537503</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -419,6 +425,7 @@
     <MESSAGE value="update add product" />
     <MESSAGE value="add folder th_laravel1" />
     <MESSAGE value="rename namespace laravel project" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename namespace laravel project" />
+    <MESSAGE value="update database" />
+    <option name="LAST_COMMIT_MESSAGE" value="update database" />
   </component>
 </project>
