@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47a7a94b-b819-4e03-a052-ebcf10f233e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/th_laravel1/app/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/th_laravel1/app/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/th_laravel1/database/migrations/2019_10_25_135000_products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/th_laravel1/resources/views/admin/product/list_product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lopphp1907E.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lopphp1907E.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,9 +24,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/th_laravel1/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -28,8 +41,97 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/composer" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/theseer/tokenizer" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1SHebmbKXn0n8IFGfJONmkSA7xd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -40,16 +142,17 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ecommerce/admin/assests/js" />
-      <recent name="$PROJECT_DIR$/css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ecommerce/admin/views" />
       <recent name="$PROJECT_DIR$/ecommerce/admin/models" />
       <recent name="$PROJECT_DIR$/ecommerce/admin/controllers" />
       <recent name="$PROJECT_DIR$/ecommerce/admin" />
       <recent name="$PROJECT_DIR$/ecommerce" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/th_laravel1/resources/views/admin" />
+      <recent name="$PROJECT_DIR$/ecommerce/admin/assests/js" />
+      <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -112,7 +215,8 @@
       <workItem from="1570792897452" duration="8376000" />
       <workItem from="1571225028349" duration="9743000" />
       <workItem from="1571397758137" duration="7978000" />
-      <workItem from="1571830010233" duration="4033000" />
+      <workItem from="1571830010233" duration="6294000" />
+      <workItem from="1572002742698" duration="8310000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563362085408</created>
@@ -394,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571834238116</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="update code">
+      <created>1571834860204</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1571834860204</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -425,6 +536,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="create" />
     <MESSAGE value="mang trong js" />
     <MESSAGE value="date time" />
@@ -434,6 +546,7 @@
     <MESSAGE value="add folder th_laravel1" />
     <MESSAGE value="rename namespace laravel project" />
     <MESSAGE value="update database" />
-    <option name="LAST_COMMIT_MESSAGE" value="update database" />
+    <MESSAGE value="update code" />
+    <option name="LAST_COMMIT_MESSAGE" value="update code" />
   </component>
 </project>

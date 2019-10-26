@@ -18,3 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix'=>'admin','namespace'=>"Admin","middleware"=>"auth"],function(){
+    Route::group(['prefix' => 'san-pham'], function () {
+        //root/admin/san-pham/danh-sach
+        Route::get("danh-sach","ProductController@getListProduct");
+        //root/admin/san-pham/them
+        Route::get("them", ['as' => 'themsanpham', 'uses' => 'ProductController@getAddProduct']);
+    });
+});
