@@ -72,9 +72,22 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-            @yield('content2')
+        <main class="py-4 container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="{{route('danh-sach-san-pham')}}">List product</a></li>
+                        <li class="list-group-item"><a href="{{route('list-danh-muc')}}">List category</a></li>
+                        <li class="list-group-item">list categories</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-9">@yield('content')</div>
+            </div>
+
         </main>
     </div>
 </body>

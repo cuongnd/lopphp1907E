@@ -1,4 +1,4 @@
 @extends('admin.layouts.app')
 @section('content')
-    hello list product
+    hello form add product
 @endsection

@@ -19,7 +19,7 @@
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                       {{-- <strong>{{ $message }}</strong>--}}
                                     </span>
                                 @enderror
                             </div>
@@ -33,7 +33,7 @@
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        {{--<strong>{{ $message }}</strong>--}}
                                     </span>
                                 @enderror
                             </div>
@@ -70,4 +70,7 @@
         </div>
     </div>
 </div>
+@endsection
+@section('content2')
+    hello content 2
 @endsection

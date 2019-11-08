@@ -12,13 +12,10 @@ class ProductController extends Controller
     function getListProduct(){
         $products=Product::orderBy('id','DESC')->get();
         //todo để đây lát nữa làm
-        echo "<pre>";
-        print_r($products, false);
-        echo "</pre>";
-        die;
+       return view('admin.product.list_product');
 
     }
     function getAddProduct(){
-
+        return view('admin.product.add_new_item');
     }
 }
