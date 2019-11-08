@@ -29,7 +29,7 @@ class MailgunTransport extends Transport
     protected $domain;
 
     /**
-     * The Mailgun API endpoint.
+     * The Mailgun API end-point.
      *
      * @var string
      */
@@ -41,7 +41,6 @@ class MailgunTransport extends Transport
      * @param  \GuzzleHttp\ClientInterface  $client
      * @param  string  $key
      * @param  string  $domain
-     * @param  string|null  $endpoint
      * @return void
      */
     public function __construct(ClientInterface $client, $key, $domain, $endpoint = null)
@@ -64,14 +63,9 @@ class MailgunTransport extends Transport
 
         $message->setBcc([]);
 
-        $response = $this->client->request(
-            'POST',
+        $this->client->post(
             "https://{$this->endpoint}/v3/{$this->domain}/messages.mime",
             $this->payload($message, $to)
-        );
-
-        $message->getHeaders()->addTextHeader(
-            'X-Mailgun-Message-ID', $this->getMessageId($response)
         );
 
         $this->sendPerformed($message);
@@ -134,19 +128,6 @@ class MailgunTransport extends Transport
     }
 
     /**
-     * Get the message ID from the response.
-     *
-     * @param  \Psr\Http\Message\ResponseInterface  $response
-     * @return string
-     */
-    protected function getMessageId($response)
-    {
-        return object_get(
-            json_decode($response->getBody()->getContents()), 'id'
-        );
-    }
-
-    /**
      * Get the API key being used by the transport.
      *
      * @return string
@@ -186,26 +167,5 @@ class MailgunTransport extends Transport
     public function setDomain($domain)
     {
         return $this->domain = $domain;
-    }
-
-    /**
-     * Get the API endpoint being used by the transport.
-     *
-     * @return string
-     */
-    public function getEndpoint()
-    {
-        return $this->endpoint;
-    }
-
-    /**
-     * Set the API endpoint being used by the transport.
-     *
-     * @param  string  $endpoint
-     * @return string
-     */
-    public function setEndpoint($endpoint)
-    {
-        return $this->endpoint = $endpoint;
     }
 }

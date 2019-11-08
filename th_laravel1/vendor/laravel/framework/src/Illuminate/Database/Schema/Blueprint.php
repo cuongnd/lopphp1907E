@@ -22,13 +22,6 @@ class Blueprint
     protected $table;
 
     /**
-     * The prefix of the table.
-     *
-     * @var string
-     */
-    protected $prefix;
-
-    /**
      * The columns that should be added to the table.
      *
      * @var \Illuminate\Database\Schema\ColumnDefinition[]
@@ -71,13 +64,11 @@ class Blueprint
      *
      * @param  string  $table
      * @param  \Closure|null  $callback
-     * @param  string  $prefix
      * @return void
      */
-    public function __construct($table, Closure $callback = null, $prefix = '')
+    public function __construct($table, Closure $callback = null)
     {
         $this->table = $table;
-        $this->prefix = $prefix;
 
         if (! is_null($callback)) {
             $callback($this);
@@ -134,8 +125,6 @@ class Blueprint
      *
      * @param  \Illuminate\Database\Connection  $connection
      * @return void
-     *
-     * @throws \BadMethodCallException
      */
     protected function ensureCommandsAreValid(Connection $connection)
     {
@@ -251,7 +240,7 @@ class Blueprint
     protected function creating()
     {
         return collect($this->commands)->contains(function ($command) {
-            return $command->name === 'create';
+            return $command->name == 'create';
         });
     }
 
@@ -323,7 +312,7 @@ class Blueprint
     /**
      * Indicate that the given primary key should be dropped.
      *
-     * @param  string|array|null  $index
+     * @param  string|array  $index
      * @return \Illuminate\Support\Fluent
      */
     public function dropPrimary($index = null)
@@ -468,7 +457,7 @@ class Blueprint
      * Specify the primary key(s) for the table.
      *
      * @param  string|array  $columns
-     * @param  string|null  $name
+     * @param  string  $name
      * @param  string|null  $algorithm
      * @return \Illuminate\Support\Fluent
      */
@@ -481,7 +470,7 @@ class Blueprint
      * Specify a unique index for the table.
      *
      * @param  string|array  $columns
-     * @param  string|null  $name
+     * @param  string  $name
      * @param  string|null  $algorithm
      * @return \Illuminate\Support\Fluent
      */
@@ -494,7 +483,7 @@ class Blueprint
      * Specify an index for the table.
      *
      * @param  string|array  $columns
-     * @param  string|null  $name
+     * @param  string  $name
      * @param  string|null  $algorithm
      * @return \Illuminate\Support\Fluent
      */
@@ -507,7 +496,7 @@ class Blueprint
      * Specify a spatial index for the table.
      *
      * @param  string|array  $columns
-     * @param  string|null  $name
+     * @param  string  $name
      * @return \Illuminate\Support\Fluent
      */
     public function spatialIndex($columns, $name = null)
@@ -519,8 +508,8 @@ class Blueprint
      * Specify a foreign key for the table.
      *
      * @param  string|array  $columns
-     * @param  string|null  $name
-     * @return \Illuminate\Support\Fluent|\Illuminate\Database\Schema\ForeignKeyDefinition
+     * @param  string  $name
+     * @return \Illuminate\Support\Fluent
      */
     public function foreign($columns, $name = null)
     {
@@ -534,17 +523,6 @@ class Blueprint
      * @return \Illuminate\Database\Schema\ColumnDefinition
      */
     public function increments($column)
-    {
-        return $this->unsignedInteger($column, true);
-    }
-
-    /**
-     * Create a new auto-incrementing integer (4-byte) column on the table.
-     *
-     * @param  string  $column
-     * @return \Illuminate\Database\Schema\ColumnDefinition
-     */
-    public function integerIncrements($column)
     {
         return $this->unsignedInteger($column, true);
     }
@@ -597,7 +575,7 @@ class Blueprint
      * Create a new char column on the table.
      *
      * @param  string  $column
-     * @param  int|null  $length
+     * @param  int  $length
      * @return \Illuminate\Database\Schema\ColumnDefinition
      */
     public function char($column, $length = null)
@@ -611,7 +589,7 @@ class Blueprint
      * Create a new string column on the table.
      *
      * @param  string  $column
-     * @param  int|null  $length
+     * @param  int  $length
      * @return \Illuminate\Database\Schema\ColumnDefinition
      */
     public function string($column, $length = null)
@@ -854,18 +832,6 @@ class Blueprint
     public function enum($column, array $allowed)
     {
         return $this->addColumn('enum', $column, compact('allowed'));
-    }
-
-    /**
-     * Create a new set column on the table.
-     *
-     * @param  string  $column
-     * @param  array  $allowed
-     * @return \Illuminate\Database\Schema\ColumnDefinition
-     */
-    public function set($column, array $allowed)
-    {
-        return $this->addColumn('set', $column, compact('allowed'));
     }
 
     /**
@@ -1181,18 +1147,6 @@ class Blueprint
     }
 
     /**
-     * Create a new generated, computed column on the table.
-     *
-     * @param  string  $column
-     * @param  string  $expression
-     * @return \Illuminate\Database\Schema\ColumnDefinition
-     */
-    public function computed($column, $expression)
-    {
-        return $this->addColumn('computed', $column, compact('expression'));
-    }
-
-    /**
      * Add the proper columns for a polymorphic table.
      *
      * @param  string  $name
@@ -1220,38 +1174,6 @@ class Blueprint
         $this->string("{$name}_type")->nullable();
 
         $this->unsignedBigInteger("{$name}_id")->nullable();
-
-        $this->index(["{$name}_type", "{$name}_id"], $indexName);
-    }
-
-    /**
-     * Add the proper columns for a polymorphic table using UUIDs.
-     *
-     * @param  string  $name
-     * @param  string|null  $indexName
-     * @return void
-     */
-    public function uuidMorphs($name, $indexName = null)
-    {
-        $this->string("{$name}_type");
-
-        $this->uuid("{$name}_id");
-
-        $this->index(["{$name}_type", "{$name}_id"], $indexName);
-    }
-
-    /**
-     * Add nullable columns for a polymorphic table using UUIDs.
-     *
-     * @param  string  $name
-     * @param  string|null  $indexName
-     * @return void
-     */
-    public function nullableUuidMorphs($name, $indexName = null)
-    {
-        $this->string("{$name}_type")->nullable();
-
-        $this->uuid("{$name}_id")->nullable();
 
         $this->index(["{$name}_type", "{$name}_id"], $indexName);
     }
@@ -1320,7 +1242,7 @@ class Blueprint
      */
     protected function createIndexName($type, array $columns)
     {
-        $index = strtolower($this->prefix.$this->table.'_'.implode('_', $columns).'_'.$type);
+        $index = strtolower($this->table.'_'.implode('_', $columns).'_'.$type);
 
         return str_replace(['-', '.'], '_', $index);
     }
@@ -1351,7 +1273,7 @@ class Blueprint
     public function removeColumn($name)
     {
         $this->columns = array_values(array_filter($this->columns, function ($c) use ($name) {
-            return $c['name'] != $name;
+            return $c['attributes']['name'] != $name;
         }));
 
         return $this;

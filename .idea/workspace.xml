@@ -2,21 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47a7a94b-b819-4e03-a052-ebcf10f233e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/app/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/app/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/database/migrations/2019_10_25_135000_products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/resources/views/admin/product/list_product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lopphp1907E.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lopphp1907E.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Console/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/app/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/broadcasting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/hashing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/config/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/svg/403.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/svg/404.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/svg/500.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/svg/503.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/public/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/lang/en/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/lang/en/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/lang/en/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/lang/en/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/routes/channels.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/tests/CreatesApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/th_laravel1/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +103,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/th_laravel1/composer.json</pharConfigPath>
     <execution>
       <executable path="composer" />
@@ -139,6 +218,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -216,7 +296,9 @@
       <workItem from="1571225028349" duration="9743000" />
       <workItem from="1571397758137" duration="7978000" />
       <workItem from="1571830010233" duration="6294000" />
-      <workItem from="1572002742698" duration="8310000" />
+      <workItem from="1572002742698" duration="8337000" />
+      <workItem from="1572353616252" duration="634000" />
+      <workItem from="1573211892876" duration="2451000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563362085408</created>
@@ -505,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571834860204</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update code">
+      <created>1572068762595</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1572068762595</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -519,6 +608,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

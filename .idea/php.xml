@@ -10,7 +10,6 @@
       <path value="$PROJECT_DIR$/th_laravel1/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/th_laravel1/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/sebastian/object-enumerator" />
@@ -40,7 +39,6 @@
       <path value="$PROJECT_DIR$/th_laravel1/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/erusev/parsedown" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/th_laravel1/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/dnoegel/php-xdg-base-dir" />
@@ -83,9 +81,11 @@
       <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/symfony/translation" />
       <path value="$PROJECT_DIR$/th_laravel1/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/kylekatarnls/update-helper" />
+      <path value="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/th_laravel1/vendor/autoload.php" />

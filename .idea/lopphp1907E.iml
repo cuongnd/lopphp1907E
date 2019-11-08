@@ -16,9 +16,11 @@
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/fideloper/proxy" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/filp/whoops" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/gloudemans/shoppingcart" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/jakub-onderka/php-console-color" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/jakub-onderka/php-console-highlighter" />
+      <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/kylekatarnls/update-helper" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/league/flysystem" />
@@ -28,14 +30,12 @@
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/nunomaduro/collision" />
-      <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/opis/closure" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/paragonie/random_compat" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/phar-io/version" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/phpdocumentor/type-resolver" />
-      <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/phpspec/prophecy" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/phpunit/php-code-coverage" />
       <excludeFolder url="file://$MODULE_DIR$/th_laravel1/vendor/phpunit/php-file-iterator" />
