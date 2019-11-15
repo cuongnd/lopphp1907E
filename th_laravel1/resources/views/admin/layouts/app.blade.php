@@ -10,6 +10,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+    <script type="text/javascript" src="{{ asset('js/ckeditor/ckeditor.js') }}" defer></script>
+
+    <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -76,8 +79,18 @@
             <div class="row">
                 <div class="col-md-3">
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="{{route('danh-sach-san-pham')}}">List product</a></li>
-                        <li class="list-group-item"><a href="{{route('list-danh-muc')}}">List category</a></li>
+                        <li class="list-group-item">
+                            <a href="{{route('danh-sach-san-pham')}}">List product</a>
+                            <ul>
+                                <li><a href="{{route('them-san-pham')}}">Add product</a></li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{{route('list-danh-muc')}}">List category</a>
+                            <ul>
+                                <li><a href="{{route('them-danh-muc')}}">Add Category</a></li>
+                            </ul>
+                        </li>
                         <li class="list-group-item">list categories</li>
                         <li class="list-group-item">Morbi leo risus</li>
                         <li class="list-group-item">Porta ac consectetur ac</li>

@@ -27,7 +27,10 @@ Route::group(['prefix'=>'admin','namespace'=>"Admin"],function(){
         //root/admin/san-pham/danh-sach
         Route::get("danh-sach",['as'=>'danh-sach-san-pham','uses'=>"ProductController@getListProduct"]);
         //root/admin/san-pham/them
-        Route::get("them", ['as' => 'themsanpham', 'uses' => 'ProductController@getAddProduct']);
+        Route::get("them", ['as' => 'them-san-pham', 'uses' => 'ProductController@getAddProduct']);
+
+        //root/admin/san-pham/them
+        Route::post("them", ['as' => 'post-add-product', 'uses' => 'ProductController@postAddProduct']);
     });
 
 
@@ -36,5 +39,7 @@ Route::group(['prefix'=>'admin','namespace'=>"Admin"],function(){
     Route::group(['prefix' => 'danh-muc'], function () {
         //root/admin/danh-muc/list-danh-muc
         Route::get("list-danh-muc",['as'=>'list-danh-muc','uses'=>"CategoryController@listCategory"]);
+        //root/admin/danh-muc/them-danh-muc
+        Route::get("them", ['as' => 'them-danh-muc', 'uses' => 'CategoryController@getAddCategory']);
     });
 });
