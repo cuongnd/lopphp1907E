@@ -2,3 +2,5 @@ php artisan migrate:fresh --path=/database/migrations/2019_10_25_135000_products
 php artisan migrate --path=/database/migrations
 
 php artisan migrate --path=/database/migrations/2019_10_25_135000_products.php
+php artisan migrate:refresh --path=/database/migrations/2019_11_15_123444_categories.php
+php artisan migrate --path=/database/migrations/2019_11_15_123444_categories.php

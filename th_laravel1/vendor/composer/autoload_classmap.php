@@ -3492,6 +3492,7 @@ return array(
     'php1907e_th_laravel_1\\Category' => $baseDir . '/app/Category.php',
     'php1907e_th_laravel_1\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'php1907e_th_laravel_1\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'php1907e_th_laravel_1\\Http\\Controllers\\Admin\\CategoryController' => $baseDir . '/app/Http/Controllers/Admin/CategoryController.php',
     'php1907e_th_laravel_1\\Http\\Controllers\\Admin\\ProductController' => $baseDir . '/app/Http/Controllers/Admin/ProductController.php',
     'php1907e_th_laravel_1\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'php1907e_th_laravel_1\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',

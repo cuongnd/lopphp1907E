@@ -3864,6 +3864,7 @@ class ComposerStaticInit46bc599a78583640e05b5b85d13dcc46
         'php1907e_th_laravel_1\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'php1907e_th_laravel_1\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'php1907e_th_laravel_1\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'php1907e_th_laravel_1\\Http\\Controllers\\Admin\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CategoryController.php',
         'php1907e_th_laravel_1\\Http\\Controllers\\Admin\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProductController.php',
         'php1907e_th_laravel_1\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'php1907e_th_laravel_1\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
