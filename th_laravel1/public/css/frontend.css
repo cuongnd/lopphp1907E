@@ -1,0 +1,116 @@
+.menu{
+    height: 50px;
+    line-height: 50px;
+    background: #C97626;
+}
+.discount-products
+{
+    background: #fff;
+    margin-top: 20px;
+}
+.new-products
+{
+    height: 400px;
+    background: #f76d84;
+}
+h3{
+    padding: 0;
+    margin: 0;
+}
+.view-home  .wrapper-title-discount-product{
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+.view-home  .wrapper-title-discount-product:before{
+    content: " ";
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    line-height: 36px;
+    background-color: #ccc;
+    top: 35%;
+    left: 0;
+}
+.view-home  .wrapper-title-discount-product:after{
+    content: " ";
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    line-height: 36px;
+    background-color: #ccc;
+    top: 35%;
+    left: 0;
+}
+.view-home .title-discount-product
+{
+
+    margin: 0px;
+    font-size: 1.8em;
+    line-height: 36px;
+    color: #333;
+    padding: 0px 30px;
+    background-color: #fff;
+    display: inline-block;
+    z-index: 9;
+    font-weight: 400;
+    position: relative;
+}
+.view-home  .discount-products
+{
+    margin-bottom: 20px;
+}
+.view-home  .discount-products  .product-image-intro
+{
+    width: 100%;
+}
+
+.view-home  .discount-products .product-item
+{
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.view-home  .discount-products .product-item .product-item-content{
+    padding: 10px;
+    position: relative;
+}
+.view-home  .discount-products  .product-name{
+    margin-top: 10px;
+    color: #333;
+}
+.view-home  .discount-products .price{
+    text-decoration: line-through;
+}
+.view-home  .discount-products .sale-price{
+    color: #c8493f;
+}
+.view-home  .discount-products .product-item .pin-sale
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #c8493f;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 25px;
+    top: 5px;
+    left: 5px;
+}
+.view-home  .discount-products .product-item .pin-new
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #EEAD0E;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 25px;
+    top: 5px;
+    right: 5px;
+}

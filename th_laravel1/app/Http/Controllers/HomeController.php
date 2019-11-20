@@ -3,6 +3,7 @@
 namespace php1907e_th_laravel_1\Http\Controllers;
 
 use Illuminate\Http\Request;
+use php1907e_th_laravel_1\Product;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+
     }
 
     /**
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $discount_products=Product::all();
+        $new_products=Product::all();
+        return view('home',compact('discount_products','new_products'));
     }
 }

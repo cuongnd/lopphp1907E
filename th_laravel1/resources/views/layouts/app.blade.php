@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/frontend.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -73,8 +74,12 @@
         </nav>
 
         <main class="py-4">
+            <div class="container">
+                <div class="menu">
+                    make menu here
+                </div>
+            </div>
             @yield('content')
-            @yield('content2')
         </main>
     </div>
 </body>
