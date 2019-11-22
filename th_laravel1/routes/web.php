@@ -16,7 +16,9 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-
+Route::get("product-detail/{id}",['as'=>'product-detail','uses'=>"ProductController@getDetailProduct"]);
+Route::post("add-to-cart/{id}",['as'=>'add-to-cart','uses'=>"CartController@postAddTocart"]);
+Route::get("gio-hang/",['as'=>'gio-hang','uses'=>"CartController@index"]);
 Route::group(['prefix'=>'admin','namespace'=>"Admin"],function(){
 
     Route::group(['prefix' => 'san-pham'], function () {

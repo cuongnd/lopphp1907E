@@ -22,7 +22,7 @@
                                          <span class="price">{{$product->price}}</span>
                                         <span class="currency">đ</span>
                                     </div>
-                                    <button class="btn btn-primary btn-block"><i class="glyphicon glyphicon-search"></i> Chi tiết</button>
+                                    <a href="{{route('product-detail',$product->id)}}" class="btn btn-primary btn-block"><i class="fas fa-search-plus"></i> Chi tiết</a>
                                 </div>
                             </div>
                         </div>
