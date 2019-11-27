@@ -123,3 +123,7 @@ h3{
 .view-home  .discount-products .product-item:hover{
     border: 1px solid #ccc;
 }
+.row-input
+{
+    margin-bottom: 10px;
+}

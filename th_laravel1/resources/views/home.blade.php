@@ -3,6 +3,9 @@
 @section('content')
     <div class="view-home">
         <div class="container">
+            @if (Session::has('message'))
+                <div class="alert alert-info">{{ Session::get('message') }}</div>
+            @endif
             <div class="discount-products">
                 <div class="wrapper-title-discount-product"><h3 class="title-discount-product">Sản phẩm khuyến mãi</h3></div>
 
