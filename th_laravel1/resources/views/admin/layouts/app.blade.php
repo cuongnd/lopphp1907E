@@ -92,7 +92,7 @@
                                 <li><a href="{{route('them-danh-muc')}}">Add Category</a></li>
                             </ul>
                         </li>
-                        <li class="list-group-item">list categories</li>
+                        <li class="list-group-item"> <a href="{{route('list-don-hang')}}">List orders</a></li>
                         <li class="list-group-item">Morbi leo risus</li>
                         <li class="list-group-item">Porta ac consectetur ac</li>
                         <li class="list-group-item">Vestibulum at eros</li>

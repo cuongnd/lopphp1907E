@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47a7a94b-b819-4e03-a052-ebcf10f233e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/th_laravel1/data_sample/php1907e_th_laravel_1.sql.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/config/cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/database/migrations/0000_00_00_000000_create_shoppingcart_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/CanBeBought.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/Cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/CartItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/CartItemOptions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/Contracts/Buyable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/Exceptions/CartAlreadyStoredException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/Exceptions/InvalidRowIDException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/Exceptions/UnknownModelException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/Facades/Cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/src/ShoppingcartServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/tests/CartAssertions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/tests/CartItemTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/tests/CartTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/tests/Fixtures/BuyableProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/gloudemans/shoppingcart/tests/Fixtures/ProductModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/kylekatarnls/update-helper/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/kylekatarnls/update-helper/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/kylekatarnls/update-helper/src/UpdateHelper/ComposerPlugin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/kylekatarnls/update-helper/src/UpdateHelper/NotUpdateInterfaceInstanceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/vendor/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelperInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Admin/OrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/th_laravel1/resources/views/admin/order/detail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/th_laravel1/resources/views/admin/order/list_order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/resources/views/admin/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,19 +135,19 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/th_laravel1/resources/views/admin/category" />
-      <recent name="$PROJECT_DIR$/th_laravel1/public/assests/admin" />
-      <recent name="$PROJECT_DIR$/th_laravel1/database/migrations" />
-      <recent name="$PROJECT_DIR$/th_laravel1/database/migrations/need_migrate" />
-      <recent name="$PROJECT_DIR$/th_laravel1/resources/views/admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/th_laravel1/public/assets/frontend" />
       <recent name="$PROJECT_DIR$/th_laravel1/public/assets/frontend/fonts" />
       <recent name="$PROJECT_DIR$/th_laravel1/resources/views/admin/category" />
       <recent name="$PROJECT_DIR$/th_laravel1/resources/views/admin/product" />
       <recent name="$PROJECT_DIR$/th_laravel1/public/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/th_laravel1/resources/views/admin" />
+      <recent name="$PROJECT_DIR$/th_laravel1/resources/views/admin/category" />
+      <recent name="$PROJECT_DIR$/th_laravel1/public/assests/admin" />
+      <recent name="$PROJECT_DIR$/th_laravel1/database/migrations" />
+      <recent name="$PROJECT_DIR$/th_laravel1/database/migrations/need_migrate" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -246,14 +223,7 @@
       <workItem from="1574250737223" duration="4364000" />
       <workItem from="1574388693199" duration="264000" />
       <workItem from="1574422413529" duration="6838000" />
-      <workItem from="1574854816602" duration="2667000" />
-    </task>
-    <task id="LOCAL-00001" summary="create">
-      <created>1563362085408</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1563362085408</updated>
+      <workItem from="1574854816602" duration="5824000" />
     </task>
     <task id="LOCAL-00002" summary="create">
       <created>1563365526141</created>
@@ -591,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574857360698</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="update code">
+      <created>1574857510130</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1574857510130</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

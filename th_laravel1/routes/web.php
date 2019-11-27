@@ -39,8 +39,19 @@ Route::group(['prefix'=>'admin','namespace'=>"Admin"],function(){
         //root/admin/san-pham/sua-san-pham/3
         Route::post("sua-san-pham/{id}", ['as' => 'post-sua-san-pham', 'uses' => 'ProductController@postEditProduct']);
 
-    });
 
+    });
+    Route::group(['prefix' => 'don-hang'], function () {
+        //root/admin/don-hang/list-don-hang
+        Route::get("list-don-hang", ['as' => 'list-don-hang', 'uses' => 'OrderController@getAllOrder']);
+
+        //root/admin/don-hang/list-don-hang
+        Route::get("chi-tiet-don-hang/{id}", ['as' => 'chi-tiet-don-hang', 'uses' => 'OrderController@getOrderDetail']);
+
+        //root/admin/don-hang/list-don-hang
+        Route::post("update-order/{id}", ['as' => 'post-edit-order', 'uses' => 'OrderController@updateOrder']);
+
+    });
 
 
     //root/admin/danh-muc
