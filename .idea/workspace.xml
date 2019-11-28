@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47a7a94b-b819-4e03-a052-ebcf10f233e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/Admin/OrderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/resources/views/admin/order/detail.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/th_laravel1/resources/views/admin/order/list_order.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/th_laravel1/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/resources/views/admin/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/th_laravel1/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/resources/views/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/th_laravel1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/th_laravel1/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -223,14 +220,7 @@
       <workItem from="1574250737223" duration="4364000" />
       <workItem from="1574388693199" duration="264000" />
       <workItem from="1574422413529" duration="6838000" />
-      <workItem from="1574854816602" duration="5824000" />
-    </task>
-    <task id="LOCAL-00002" summary="create">
-      <created>1563365526141</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1563365526141</updated>
+      <workItem from="1574854816602" duration="7113000" />
     </task>
     <task id="LOCAL-00003" summary="create">
       <created>1563368100867</created>
@@ -568,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574857510130</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="update code">
+      <created>1574862335346</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1574862335346</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

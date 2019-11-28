@@ -21,6 +21,7 @@ Route::post("add-to-cart/{id}",['as'=>'add-to-cart','uses'=>"CartController@post
 Route::get("gio-hang",['as'=>'gio-hang','uses'=>"CartController@index"]);
 Route::get("thanh-toan",['as'=>'thanh-toan','uses'=>"CartController@payNow"]);
 Route::post("thanh-toan",['as'=>'thanh-toan','uses'=>"CartController@postPayNow"]);
+Route::post("remove-item-cart/{id}",['as'=>'remove-item-cart','uses'=>"CartController@removeItemCart"]);
 Route::group(['prefix'=>'admin','namespace'=>"Admin"],function(){
 
     Route::group(['prefix' => 'san-pham'], function () {

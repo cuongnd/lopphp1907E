@@ -70,4 +70,8 @@ class CartController extends Controller
         return redirect(route('gio-hang'));
 
     }
+    public function removeItemCart($id,Request $request){
+        Cart::remove($id);
+        return redirect(route('gio-hang'));
+    }
 }
