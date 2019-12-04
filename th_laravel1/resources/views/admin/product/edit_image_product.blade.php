@@ -10,7 +10,7 @@
                 </ul>
             </div>
         @endif
-        <form action="{{route('post-sua-san-pham',$product->id)}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('post-add-image-product',$product->id)}}" method="post" enctype="multipart/form-data">
             <table class="table table-bordered">
                 <tr>
                     <th>Product name</th>
@@ -19,8 +19,7 @@
                 <tr>
                     <th>Product image</th>
                     <th>
-                        <img class="product-image-intro-edit" src="{{url('/')}}/{{$product->product_image_intro}}">
-                        <input type="file" class="form-control" name="product_image_intro">
+                        <input type="file" class="form-control" name="product_image">
                     </th>
                 </tr>
 
