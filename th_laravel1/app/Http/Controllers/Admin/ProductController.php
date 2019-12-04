@@ -5,6 +5,7 @@ namespace php1907e_th_laravel_1\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use php1907e_th_laravel_1\Category;
+use php1907e_th_laravel_1\Galleries;
 use php1907e_th_laravel_1\Http\Controllers\Controller;
 use php1907e_th_laravel_1\Product;
 
@@ -27,6 +28,11 @@ class ProductController extends Controller
         $parent_categories=Category::query()->where('parent','=',null)->get();
         $subcategories=Category::query()->where('parent','!=',null)->get();
         return view('admin.product.edit_item',compact('product','parent_categories','subcategories'));
+    }
+    function getEditGallery($id,Request $request){
+        $product=Product::find($id);
+        $galleries=Galleries::query()->where('product_id','=',$id);
+        return view('admin.product.edit_gallery',compact('product','galleries'));
     }
     function postAddProduct(Request $request){
         $post=$request->all();

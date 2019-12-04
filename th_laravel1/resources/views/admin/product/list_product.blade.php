@@ -30,7 +30,11 @@
                         <td nowrap>{{$product->sale_price}}</td>
                         <td nowrap>{{date('d-m-Y h:m', strtotime($product->created_at)) }}</td>
                         <td nowrap>{{$product->description}}</td>
-                        <th nowrap><a href="{{route('sua-san-pham',$product->id)}}" class="btn btn-primary">Edit</a> <button class="btn btn-primary">Delete</button></th>
+                        <th nowrap>
+                            <a href="{{route('sua-san-pham',$product->id)}}" class="btn btn-primary">Edit</a>
+                            <button class="btn btn-primary">Delete</button>
+                            <a href="{{route('get-edit-gallery',$product->id)}}" class="btn btn-primary">Gallery</a>
+                        </th>
                     </tr>
                 @endforeach
             </tbody>

@@ -55,6 +55,9 @@ Route::group(['prefix'=>'admin','namespace'=>"Admin"],function(){
         //root/admin/san-pham/sua-san-pham/3
         Route::post("sua-san-pham/{id}", ['as' => 'post-sua-san-pham', 'uses' => 'ProductController@postEditProduct']);
 
+        //root/admin/san-pham/sua-san-pham/3
+        Route::get("edit-gallery/{id}", ['as' => 'get-edit-gallery', 'uses' => 'ProductController@getEditGallery']);
+
 
     });
     Route::group(['prefix' => 'don-hang'], function () {
