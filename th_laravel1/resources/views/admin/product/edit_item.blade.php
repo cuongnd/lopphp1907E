@@ -26,9 +26,17 @@
                 <tr>
                     <th>Category</th>
                     <th>
-                        <select name="category_id">
-                            <option value="1">Điện thoại</option>
-                            <option value="2">Điện tử</option>
+                        <select  name="category_id">
+                            <option value="">Chọn danh mục</option>
+                            @foreach($parent_categories as $category)
+                                <optgroup label="{{$category->category_name}}">
+                                    @foreach($subcategories as $sub_category)
+                                        @if ($sub_category->parent==$category->id)
+                                            <option {{ $product->category_id == $sub_category->id ? " selected " : "" }} value="{{$sub_category->id}}">{{$sub_category->category_name}}</option>
+                                        @endif
+                                    @endforeach
+                                </optgroup>
+                            @endforeach
                         </select>
                     </th>
                 </tr>

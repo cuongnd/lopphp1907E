@@ -4,6 +4,7 @@ namespace php1907e_th_laravel_1\Http\Controllers\Admin;
 
 
 use Illuminate\Http\Request;
+use php1907e_th_laravel_1\Category;
 use php1907e_th_laravel_1\Http\Controllers\Controller;
 use php1907e_th_laravel_1\Product;
 
@@ -23,7 +24,9 @@ class ProductController extends Controller
     }
     function getEditProduct($id){
         $product=Product::find($id);
-        return view('admin.product.edit_item',compact('product'));
+        $parent_categories=Category::query()->where('parent','=',null)->get();
+        $subcategories=Category::query()->where('parent','!=',null)->get();
+        return view('admin.product.edit_item',compact('product','parent_categories','subcategories'));
     }
     function postAddProduct(Request $request){
         $post=$request->all();
@@ -84,6 +87,7 @@ class ProductController extends Controller
             'description' => 'required',
             'full_description' => 'required'
         ]);
+
 
 
         $productModel=Product::find($id);

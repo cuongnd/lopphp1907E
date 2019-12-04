@@ -3,7 +3,9 @@
 namespace php1907e_th_laravel_1\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 use php1907e_th_laravel_1\Product;
+
 
 class HomeController extends Controller
 {
@@ -24,8 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $discount_products=Product::all();
-        $new_products=Product::all();
+        $discount_products=DB::table('products')->orderBy('created_at')->get();
+        $new_products=DB::table('products')->orderBy('sale_price')->get();
+
         return view('home',compact('discount_products','new_products'));
     }
 }

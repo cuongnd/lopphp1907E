@@ -17,6 +17,17 @@
                     <td><input type="text" class="form-control" name="category_name"></td>
                 </tr>
                 <tr>
+                    <th>Parent</th>
+                    <td>
+                        <select name="parent">
+                            <option value="">Root</option>
+                            @foreach($list_root_category as $category)
+                                <option value="{{$category->id}}">{{$category->category_name}}</option>
+                            @endforeach
+                        </select>
+                    </td>
+                </tr>
+                <tr>
                     <th>Image</th>
                     <td><input type="file" name="image_category" class="form-control"></td>
                 </tr>

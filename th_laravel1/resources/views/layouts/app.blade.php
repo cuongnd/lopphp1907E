@@ -24,7 +24,66 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <header class="header header1">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pull-right">
+                            <ul class="list-controllers">
+                                <li><a href="{{route('gio-hang')}}"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+                                <li><a href="{{route('dang-nhap')}}"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+                                <li><a href="{{route('dang-nhap')}}"><i class="fas fa-user"></i> Đăng ký</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <header class="header header2">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="{{route("home")}}"><img class="logo" src="{{ asset('/assets/frontend/images/logo.jpg') }}"></a>
+                    </div>
+                    <div class="col-md-3 col-md-offset-3">
+                        <div class="area-search">
+                            <form action="{{route('tim-kiem')}}" method="post">
+                                <input type="text" class="form-control keyword" name="keyword"><i class="fas fa-search"></i>
+                                <p><b>Từ khóa</b>: giày thể thao</p>
+                                {{csrf_field()}}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        @php
+            $list_root_category=DB::table('categories')->where('parent','=',null)->get();
+            $list_sub_category=DB::table('categories')->where('parent','!=',null)->get();
+
+
+        @endphp
+        <nav class="nav">
+            <div class="container">
+                <ul class="list-main-menu">
+                    <li><a href="{{route('home')}}" class="active">Home</a></li>
+                    @foreach($list_root_category as $root_category)
+                        <li>
+                            <a href="javascript:void(0)">{{$root_category->category_name}}</a>
+                            <ul class="sub-category">
+                                @foreach ($list_sub_category as $sub_category)
+                                    @if ($sub_category->parent==$root_category->id)
+                                        <li><a href="{{route('danh-muc',$sub_category->id)}}">{{$sub_category->category_name}}</a></li>
+                                    @endif
+                                @endforeach
+
+                            </ul>
+                        </li>
+                    @endforeach
+                    <li><a href="{{route('gioi-thieu')}}">Giới thiệu</a></li>
+                    <li><a href="{{route('lien-he')}}">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav style="display: none" class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -76,11 +135,7 @@
         </nav>
 
         <main class="py-4">
-            <div class="container">
-                <div class="menu">
-                    make menu here
-                </div>
-            </div>
+
             @yield('content')
         </main>
     </div>

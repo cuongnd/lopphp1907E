@@ -10,12 +10,26 @@
                 </ul>
             </div>
         @endif
-        <form action="{{route('post-them-category',$category->id)}}" method="post"  enctype="multipart/form-data">
+        <form action="{{route('post-sua-danh-muc',$category->id)}}" method="post"  enctype="multipart/form-data">
             <table class="table  table-bordered">
                 <tr>
                     <th>Category name</th>
                     <td><input type="text" class="form-control" value="{{$category->category_name}}" name="category_name"></td>
                 </tr>
+                <tr>
+                    <th>Parent</th>
+                    <td>
+                        {{$category}}
+                        <select name="parent" class="form-control">
+
+                            <option value="" {{ $category->parent == "" ? " selected" : "" }}>Root</option>
+                            @foreach($list_root_category as $item_category)
+                                <option {{ $category->parent == $item_category->id ? " selected " : "" }} value="{{$item_category->id}}">{{$item_category->category_name}}</option>
+                            @endforeach
+                        </select>
+                    </td>
+                </tr>
+
                 <tr>
                     <th>Image</th>
                     <td>
