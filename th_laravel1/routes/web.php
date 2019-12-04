@@ -55,8 +55,11 @@ Route::group(['prefix'=>'admin','namespace'=>"Admin"],function(){
         //root/admin/san-pham/sua-san-pham/3
         Route::post("sua-san-pham/{id}", ['as' => 'post-sua-san-pham', 'uses' => 'ProductController@postEditProduct']);
 
-        //root/admin/san-pham/sua-san-pham/3
-        Route::get("edit-gallery/{id}", ['as' => 'get-edit-gallery', 'uses' => 'ProductController@getEditGallery']);
+        //root/admin/san-pham/list-image/{id}
+        Route::get("list-image/{id}", ['as' => 'list-image', 'uses' => 'ProductController@getEditListImageProduct']);
+
+        //root/admin/san-pham/edit-gallery/{id}
+        Route::get("add-image-product/{product_id}", ['as' => 'add-image-product', 'uses' => 'ProductController@getAddImageProduct']);
 
 
     });

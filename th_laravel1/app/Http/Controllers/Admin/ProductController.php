@@ -29,10 +29,14 @@ class ProductController extends Controller
         $subcategories=Category::query()->where('parent','!=',null)->get();
         return view('admin.product.edit_item',compact('product','parent_categories','subcategories'));
     }
-    function getEditGallery($id,Request $request){
+    function getEditListImageProduct($id,Request $request){
         $product=Product::find($id);
-        $galleries=Galleries::query()->where('product_id','=',$id);
-        return view('admin.product.edit_gallery',compact('product','galleries'));
+        $list_image=Galleries::query()->where('product_id','=',$id);
+        return view('admin.product.list_image_product',compact('product','list_image'));
+    }
+    function getAddImageProduct($product_id,Request $request){
+        $product=Product::find($product_id);
+        return view('admin.product.edit_image_product',compact('product'));
     }
     function postAddProduct(Request $request){
         $post=$request->all();

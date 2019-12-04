@@ -17,6 +17,53 @@
                     <th><input type="text" class="form-control" value="{{$product->product_name}}" name="product_name"></th>
                 </tr>
                 <tr>
+                    <th>Product image intro</th>
+                    <th>
+                        <img class="product-image-intro-edit" src="{{url('/')}}/{{$product->product_image_intro}}">
+                        <input type="file" class="form-control" name="product_image_intro">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <th>
+                        <select  name="category_id">
+                            <option value="">Chọn danh mục</option>
+                            @foreach($parent_categories as $category)
+                                <optgroup label="{{$category->category_name}}">
+                                    @foreach($subcategories as $sub_category)
+                                        @if ($sub_category->parent==$category->id)
+                                            <option {{ $product->category_id == $sub_category->id ? " selected " : "" }} value="{{$sub_category->id}}">{{$sub_category->category_name}}</option>
+                                        @endif
+                                    @endforeach
+                                </optgroup>
+                            @endforeach
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Publish</th>
+                    <th>
+
+                        <select name="publish">
+                            <option  <?php echo $product->publish==1?' selected ':'' ?> value="1">Yes</option>
+                            <option <?php echo $product->publish==0?' selected ':'' ?> value="0">No</option>
+                        </select>
+
+                    </th>
+                </tr>
+                <tr>
+                    <th>price</th>
+                    <th>
+                       <input type="text" name="price" value="{{$product->price}}" class="form-control">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Sale price</th>
+                    <th>
+                       <input type="text" name="sale_price" value="{{$product->sale_price}}" class="form-control">
+                    </th>
+                </tr>
+                <tr>
                     <th>Ordering</th>
                     <th>
                        <input type="text" name="ordering" value="{{$product->ordering}}" class="form-control">
@@ -26,6 +73,12 @@
                     <th>Description</th>
                     <th>
                         <textarea class="form-control" name="description">{{$product->description}}</textarea>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Full description</th>
+                    <th>
+                        <textarea class="form-control" id="full_description" name="full_description">{{$product->full_description}}</textarea>
                     </th>
                 </tr>
                 <tr>

@@ -33,7 +33,7 @@
                         <th nowrap>
                             <a href="{{route('sua-san-pham',$product->id)}}" class="btn btn-primary">Edit</a>
                             <button class="btn btn-primary">Delete</button>
-                            <a href="{{route('get-edit-gallery',$product->id)}}" class="btn btn-primary">Gallery</a>
+                            <a href="{{route('list-image',$product->id)}}" class="btn btn-primary">Gallery</a>
                         </th>
                     </tr>
                 @endforeach
